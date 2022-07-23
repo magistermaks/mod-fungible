@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "net.darktree.fungible.mixin",
+	"compatibilityLevel": "JAVA_16",
+	"mixins": [
+		"MinecraftServerMixin",
+		"NarratorMixin",
+		"NbtHelperMixin",
+		"SchemasMixin",
+		"UtilMixin"
+	],
+	"client": [
+		"ShutAuthMixin",
+		"SplashOverlayMixin",
+		"TitleScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

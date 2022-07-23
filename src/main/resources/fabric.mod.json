@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "fungible",
+	"version": "${version}",
+	"name": "Fungible",
+	"description": "Gota restart fast!",
+	"authors": [
+		"magistermaks"
+	],
+	"contact": {
+		"website": "http://darktree.new"
+	},
+	"license": "LGPL-3.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.darktree.fungible.Fungible"
+		]
+	},
+	"mixins": [
+		"fungible.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.8",
+		"minecraft": "1.17.1"
+	}
+}

@@ -13,11 +13,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(MinecraftClient.class)
 public class ShutAuthMixin {
+	/**
+	 * @author magistermaks
+	 * @reason STOP TAKING THE FOCUS AWAY FORM THE GAME LOG!
+	 */
 	@Inject(method = "createUserApiService", at = @At("HEAD"), cancellable = true)
 	private void fungible$supressAuthError(YggdrasilAuthenticationService authService, RunArgs runArgs, CallbackInfoReturnable<UserApiService> cir) {
-		if(FabricLoader.getInstance().isDevelopmentEnvironment()) {
-			Fungible.LOGGER.info("Suppressing Auth Error in dev env");
-			cir.setReturnValue(UserApiService.OFFLINE);
-		}
+		cir.setReturnValue(UserApiService.OFFLINE);
 	}
 }

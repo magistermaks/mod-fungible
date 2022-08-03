@@ -3,7 +3,7 @@
 	"id": "fungible",
 	"version": "${version}",
 	"name": "Fungible",
-	"description": "Gota restart fast!",
+	"description": "Gota restart fast - horrific hacks edition!",
 	"authors": [
 		"magistermaks"
 	],
@@ -22,6 +22,6 @@
 	],
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "*"
+		"minecraft": "1.17.x"
 	}
 }

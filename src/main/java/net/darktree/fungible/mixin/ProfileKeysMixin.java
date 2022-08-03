@@ -13,7 +13,9 @@ import java.util.concurrent.CompletableFuture;
 
 @Mixin(ProfileKeys.class)
 public abstract class ProfileKeysMixin {
-    @Shadow protected abstract void saveKeyPairToFile(@Nullable PlayerKeyPair keyPair);
+
+    @Shadow
+    protected abstract void saveKeyPairToFile(@Nullable PlayerKeyPair keyPair);
 
     /**
      * @author jacg311

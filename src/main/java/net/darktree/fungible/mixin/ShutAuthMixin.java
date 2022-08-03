@@ -9,6 +9,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(MinecraftClient.class)
 public class ShutAuthMixin {
+
 	/**
 	 * @author magistermaks
 	 * @reason STOP TAKING THE FOCUS AWAY FORM THE GAME LOG!
@@ -17,4 +18,5 @@ public class ShutAuthMixin {
 	private UserApiService createUserApiService(YggdrasilAuthenticationService authService, RunArgs runArgs) {
 		return UserApiService.OFFLINE;
 	}
+
 }

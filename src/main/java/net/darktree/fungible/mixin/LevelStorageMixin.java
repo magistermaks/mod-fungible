@@ -21,8 +21,9 @@ public class LevelStorageMixin {
 
 	/**
 	 * Yeeted
+	 * (this fails on older versions when compiled on 1.19, for the time being i added require=0 to prevent the crash)
 	 */
-	@Redirect(method="readDataPackSettings", at=@At(value="INVOKE", target="Lcom/mojang/datafixers/DataFixer;update(Lcom/mojang/datafixers/DSL$TypeReference;Lcom/mojang/serialization/Dynamic;II)Lcom/mojang/serialization/Dynamic;", remap=false))
+	@Redirect(method="readDataPackSettings", at=@At(value="INVOKE", target="Lcom/mojang/datafixers/DataFixer;update(Lcom/mojang/datafixers/DSL$TypeReference;Lcom/mojang/serialization/Dynamic;II)Lcom/mojang/serialization/Dynamic;", remap=false), require=0)
 	private static <T> Dynamic<T> readDataPackSettings_update(DataFixer instance, DSL.TypeReference typeReference, Dynamic<T> input, int v1, int v2) {
 		return input;
 	}

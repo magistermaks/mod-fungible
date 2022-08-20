@@ -22,6 +22,10 @@ dependencies {
 
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/fungible.accesswidener")
+}
+
 processResources {
 	inputs.property "version", project.version
 	filteringCharset "UTF-8"

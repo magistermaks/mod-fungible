@@ -12,6 +12,7 @@
         "UtilMixin"
     ],
     "client": [
+        "ProfileKeysImplMixin",
         "ShutAuthMixin",
         "SplashOverlayMixin",
         "TitleScreenMixin"

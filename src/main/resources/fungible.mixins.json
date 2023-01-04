@@ -14,10 +14,7 @@
     "client": [
         "ShutAuthMixin",
         "SplashOverlayMixin",
-        "TitleScreenMixin",
-        "auto_world.SelectWorldScreenMixin",
-        "auto_world.TitleScreenMixin",
-        "auto_world.WorldListWidgetAccessor"
+        "TitleScreenMixin"
     ],
     "injectors": {
         "defaultRequire": 1

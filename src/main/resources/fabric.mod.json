@@ -21,7 +21,6 @@
 	"mixins": [
 		"fungible.mixins.json"
 	],
-	"accessWidener": "fungible.accesswidener",
 	"depends": {
 		"fabricloader": "*",
 		"minecraft": ">=1.19.2"

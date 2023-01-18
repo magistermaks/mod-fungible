@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.chunk_loading;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.WorldGenerationProgressListener;

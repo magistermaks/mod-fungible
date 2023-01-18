@@ -1,5 +1,6 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.screen_fade;
 
+import net.minecraft.class_8020;
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,9 +18,8 @@ public class TitleScreenMixin {
 	/**
 	 * Let's not waste time on fancy animations shall we?
 	 */
-	@Inject(method="<init>(Z)V", at=@At("TAIL"))
-	private void init(boolean doBackgroundFade, CallbackInfo ci) {
+	@Inject(method="<init>(ZLnet/minecraft/class_8020;)V", at=@At("TAIL"))
+	private void init(boolean doBackgroundFade, class_8020 arg, CallbackInfo ci) {
 		this.doBackgroundFade = false;
 	}
-
 }

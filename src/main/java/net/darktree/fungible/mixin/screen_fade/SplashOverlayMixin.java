@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.screen_fade;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.SplashOverlay;

@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.narrator;
 
 import com.mojang.text2speech.Narrator;
 import com.mojang.text2speech.NarratorDummy;

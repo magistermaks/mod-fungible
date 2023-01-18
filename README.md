@@ -15,6 +15,7 @@ the annoying auth exception that takes focus away from the game log in IDEA.
 | SpawnChunksBeGone                | Skips spawn chunk loading                                                | (copied from TBPlugin)                                         |
 | FadeYeet                         | Yeets resource reload fade out animation                                 |                                                                |
 | ProfileUnkeyed                   | Skips message key pair request (to prevent another exception on startup) | jacg311                                                        |
+| I-know-what-im-doing             | Skip Accessibility-Onboarding & Experimental World Screens               | jacg311                                                        |
 
 #### Credits:
 SuperCoder7979 (i taken a look at DataBreaker)

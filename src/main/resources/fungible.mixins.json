@@ -6,6 +6,7 @@
     "plugin": "net.darktree.fungible.FungibleMixinPlugin",
     "mixins": [
         "chunk_loading.MinecraftServerMixin",
+        "dfu.DatafixTypesMixin",
         "dfu.LevelStorageMixin",
         "dfu.SchemasMixin",
         "dfu.UtilMixin",

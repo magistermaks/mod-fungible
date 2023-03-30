@@ -1,6 +1,6 @@
 package net.darktree.fungible.mixin.screen_skip;
 
-import net.minecraft.class_8032;
+import net.minecraft.client.gui.screen.AccessibilityOnboardingScreen;
 import org.spongepowered.asm.mixin.Debug;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Debug(export = true)
-@Mixin(value = class_8032.class, remap = false)
+@Mixin(value = AccessibilityOnboardingScreen.class, remap = false)
 public class AccessibilityScreenMixin {
     @Shadow
     public void close() {

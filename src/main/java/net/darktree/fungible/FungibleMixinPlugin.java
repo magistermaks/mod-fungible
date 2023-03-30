@@ -15,6 +15,7 @@ public class FungibleMixinPlugin implements IMixinConfigPlugin {
     Properties mixinProperties = new Properties();
     @Override
     public void onLoad(String mixinPackage) {
+        mixinCategories.put("DatafixTypesMixin", "dfu");
         mixinCategories.put("LevelStorageMixin", "dfu");
         mixinCategories.put("MinecraftServerMixin", "dfu");
         mixinCategories.put("NbtHelperMixin", "dfu");

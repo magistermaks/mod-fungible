@@ -19,3 +19,16 @@ the annoying auth exception that takes focus away from the game log in IDEA.
 
 #### Credits:
 SuperCoder7979 (i taken a look at DataBreaker)
+
+#### Configuration:
+You can selectively disable optimizations via the config file.\
+Place a file called `fungible.properties` in the config folder.\
+All values are `true` (enabled) by default.
+```properties
+# all available optimizations
+dfu=false
+narrator=true
+auth=true
+screen_fade=false
+screen_skip=true
+```

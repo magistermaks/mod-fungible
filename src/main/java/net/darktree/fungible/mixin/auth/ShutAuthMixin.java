@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.auth;
 
 import com.mojang.authlib.minecraft.UserApiService;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;

@@ -3,19 +3,22 @@
     "minVersion": "0.8",
     "package": "net.darktree.fungible.mixin",
     "compatibilityLevel": "JAVA_16",
+    "plugin": "net.darktree.fungible.FungibleMixinPlugin",
     "mixins": [
-        "LevelStorageMixin",
-        "MinecraftServerMixin",
-        "NarratorMixin",
-        "NbtHelperMixin",
-        "SchemasMixin",
-        "UtilMixin"
+        "chunk_loading.MinecraftServerMixin",
+        "dfu.DatafixTypesMixin",
+        "dfu.LevelStorageMixin",
+        "dfu.SchemasMixin",
+        "dfu.UtilMixin",
+        "narrator.NarratorMixin"
     ],
     "client": [
-        "ProfileKeysImplMixin",
-        "ShutAuthMixin",
-        "SplashOverlayMixin",
-        "TitleScreenMixin"
+        "auth.ProfileKeysImplMixin",
+        "auth.ShutAuthMixin",
+        "screen_fade.SplashOverlayMixin",
+        "screen_fade.TitleScreenMixin",
+        "screen_skip.AccessibilityScreenMixin",
+        "screen_skip.CreateWorldScreenMixin"
     ],
     "injectors": {
         "defaultRequire": 1

@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.dfu;
 
 import com.mojang.datafixers.DataFixerBuilder;
 import net.minecraft.datafixer.Schemas;

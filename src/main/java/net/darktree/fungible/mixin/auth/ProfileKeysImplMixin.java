@@ -1,4 +1,4 @@
-package net.darktree.fungible.mixin;
+package net.darktree.fungible.mixin.auth;
 
 import net.minecraft.client.util.ProfileKeysImpl;
 import net.minecraft.network.encryption.PlayerKeyPair;
